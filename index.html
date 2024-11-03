@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram.com</title> <!-- Somente a tag de título -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center;     /* Centraliza verticalmente */
+            height: 100vh;          /* Usa a altura total da janela */
+            margin: 0;              /* Remove margens padrão */
+            background-color: #000; /* Cor de fundo preta */
+        }
+        .video-container {
+            position: relative;
+            width: 100vw;          /* Largura total da viewport */
+            height: 100vh;         /* Altura total da viewport */
+            overflow: hidden;      /* Esconde partes que saem do contêiner */
+        }
+        iframe {
+            position: absolute;
+            top: 50%;               /* Centraliza verticalmente */
+            left: 50%;              /* Centraliza horizontalmente */
+            width: 100vw;          /* Largura total da viewport */
+            height: 100vh;         /* Altura total da viewport */
+            transform: translate(-50%, -50%); /* Ajusta para centralizar */
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <iframe src="https://player.vimeo.com/video/1025783168?autoplay=1&muted=1&loop=1&controls=0" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" 
+                title="video">
+        </iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
